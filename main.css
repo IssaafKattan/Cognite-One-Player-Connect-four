@@ -1,0 +1,200 @@
+body{
+	background-color: aliceblue;
+}
+.world {
+	border-radius: 3px;
+	width: 500px;
+	margin: auto;
+	align-content: center;
+	background-color: #bae1ff;
+}
+
+.empty-dot {
+	height: 55px;
+	width: 55px;
+	background-color: #474747;
+	border-radius: 50%;
+	display: inline-block;
+	border: 2px solid #ffffff;
+	margin: 1%;
+}
+
+.empty-dot:hover {
+	border: 2px solid rgb(12, 0, 0);
+}
+
+.filled-dot {
+	height: 55px;
+	width: 55px;
+	background-image: url('./public/coin.png');
+	background-size: cover;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 1%;
+	border: 2px solid #bae1ff;
+
+}
+
+.filled-dot.yellow {
+	background-color: #ffffba;
+  
+}
+
+.filled-dot.pink {
+	background-color: #ffb3ba;
+
+}
+
+.filled-dot.win {
+	background-image: url('./public/win.png');
+}
+
+.insert-button {
+	border: 2px solid #ffffff;
+	height: 55px;
+	width: 57px;
+	margin: 1%;
+	display: inline-block;
+	border-radius: 10px;
+	background-image: url('./public/insert.png');
+	background-size: cover;
+}
+
+.insert-button.player1 {
+	background-color: #ffffba;
+	color: black;
+}
+
+.insert-button.player2 {
+	background-color: #ffb3ba;
+	color: white;
+}
+
+.insert-button:hover {
+	border: 2px solid #000000;
+}
+
+.start-game {
+	width: 480px;
+	height: 100px;
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	animation: heartbeat 1.5s ease-in-out infinite both;
+	background-color: #baffc9;
+	color: white;
+	font-weight: bolder;
+	font-size: 50px;
+}
+
+@-webkit-keyframes heartbeat {
+	from {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-transform-origin: center center;
+		transform-origin: center center;
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+	10% {
+		-webkit-transform: scale(0.91);
+		transform: scale(0.91);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+	}
+	17% {
+		-webkit-transform: scale(0.98);
+		transform: scale(0.98);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+	33% {
+		-webkit-transform: scale(0.87);
+		transform: scale(0.87);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+	}
+	55% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+}
+
+@keyframes heartbeat {
+	from {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-transform-origin: center center;
+		transform-origin: center center;
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+	10% {
+		-webkit-transform: scale(0.91);
+		transform: scale(0.91);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+	}
+	17% {
+		-webkit-transform: scale(0.98);
+		transform: scale(0.98);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+	33% {
+		-webkit-transform: scale(0.87);
+		transform: scale(0.87);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+	}
+	55% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+}
+
+.big-text {
+	font-family: 'Major Mono Display', monospace;
+	text-align: center;
+}
+
+.big-text.player1 {
+	color: #ffffba;
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.big-text.player2 {
+	color: #ffb3ba;
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer {
+	text-align: center;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate3d(0, 1, 0, 0deg);
+	}
+	55% {
+		transform: rotate3d(0, 1, 0, 180deg);
+	}
+	100% {
+		transform: rotate3d(0, 1, 0, 360deg);
+	}
+}
+
+.filled-dot.info {
+	animation-name: rotation;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 3s;
+	transform: rotateY(0deg);
+	transform-style: preserve-3d;
+}
