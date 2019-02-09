@@ -1,3 +1,3 @@
 # One-Player-Connect-four
 
-One player connect four game playing agaisnt "computer" :)
+One player connect four game playing against "computer" :)
