@@ -1,1 +1,1 @@
-# Cognite-One-Player-Connect-four
+# One-Player-Connect-four
